@@ -9,3 +9,8 @@ fotology("cats", function(imageURLs){
         console.log imageURLs[i];
 });
 ```
+
+To turn off safe search, just add it to the options:
+```javascript
+fotology(searchTerm, {safe:false}, callback);
+```
