@@ -1,0 +1,31 @@
+{
+  "name": "fotology",
+  "version": "1.0.0",
+  "description": "Simplifies Image Searching",
+  "main": "main.js",
+  "dependencies": {
+    "request": "^2.58.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AbhinavMadahar/fotology.git"
+  },
+  "keywords": [
+    "images",
+    "image",
+    "searching",
+    "google",
+    "image",
+    "search"
+  ],
+  "author": "Abhinav Madahar",
+  "license": "GNU GPL v3",
+  "bugs": {
+    "url": "https://github.com/AbhinavMadahar/fotology/issues"
+  },
+  "homepage": "https://github.com/AbhinavMadahar/fotology"
+}
