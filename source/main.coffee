@@ -64,6 +64,6 @@ module.exports = (searchTerm, options, callback) ->
 		parsed = JSON.parse body
 		images = parsed.responseData.results
 		urls = images.map getUrl
-		console.log urls
+		callback urls
 
 	return
