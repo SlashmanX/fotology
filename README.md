@@ -29,12 +29,13 @@ let options = {
 fotology("cats", options, callback);
 ```
 
-Option   | Description | Example value
--------  |-------------|-----------------
-safe     | Safe search | true
-size     | Image seize | "large"
-language | Language    | "fr"
-color    | Image color | "white"
+Option   | Description  | Example value
+-------  |------------- |-----------------
+safe     | Safe search  | true
+size     | Image seize  | "large"
+language | Language     | "fr"
+color    | Image color  | "white"
+limit    | # of Results | 5
 
 ### `safe`
 By default, fotology uses moderate safe search, which is what you get on Google Images by default. It will mostly use safe search unless it thinks you do not want it.
@@ -90,5 +91,8 @@ To get images of a specific colour only, please pick from and **ONE OF THESE ONL
 * teal
 * white
 * yellow
+
+### `limit`
+Return between 1 and 8 results
 
 Using a colour not in here will cause Google's servers to ignore you.
