@@ -4,6 +4,7 @@
   "description": "Simplifies Image Searching",
   "main": "compiled/main.js",
   "dependencies": {
+    "bluebird": "^2.9.34",
     "request": "^2.58.0"
   },
   "devDependencies": {
