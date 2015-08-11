@@ -1,6 +1,6 @@
 {
-  "name": "fotology",
-  "version": "1.2.1",
+  "name": "fotology-x",
+  "version": "1.2.2",
   "description": "Simplifies Image Searching",
   "main": "compiled/main.js",
   "dependencies": {
@@ -17,7 +17,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/AbhinavMadahar/fotology.git"
+    "url": "https://github.com/SlashmanX/fotology.git"
   },
   "keywords": [
     "images",
@@ -30,7 +30,7 @@
   "author": "Abhinav Madahar",
   "license": "GNU GPL v3",
   "bugs": {
-    "url": "https://github.com/AbhinavMadahar/fotology/issues"
+    "url": "https://github.com/SlashmanX/fotology/issues"
   },
-  "homepage": "https://github.com/AbhinavMadahar/fotology"
+  "homepage": "https://github.com/SlashmanX/fotology"
 }

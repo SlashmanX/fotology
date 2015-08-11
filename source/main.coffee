@@ -1,7 +1,7 @@
 request = require 'request'
 
 # will be used when mapping the images to get their urls
-getUrl = (object) -> object.url
+getUrl = (object) -> object.unescapedUrl
 
 # look at the README.md for full documentation
 module.exports = (searchTerm, options, callback) ->
@@ -22,6 +22,7 @@ module.exports = (searchTerm, options, callback) ->
 	options.size = options.size or "any"
 	options.color = options.color or "any" # will remove invalid colours later
 	options.language = options.language or "en"
+	options.limit = options.limit or "5"
 
 	# process safety
 	switch options.safe
@@ -58,7 +59,7 @@ module.exports = (searchTerm, options, callback) ->
 	language = options.language.substring(0, 1).toLowerCase()
 
 	searchPrefix = "https://ajax.googleapis.com/ajax/services/search/images?v=1.0"
-	searchUrl = "#{searchPrefix}&q=#{searchTerm}&imgsz=#{size}&safe=#{safety}&hl=#{language}&imgcolor=#{color}"
+	searchUrl = "#{searchPrefix}&q=#{searchTerm}&imgsz=#{size}&safe=#{safety}&hl=#{language}&imgcolor=#{color}&rsz=#{limit}"
 
 	request searchUrl, (error, response, body) ->
 		parsed = JSON.parse body
