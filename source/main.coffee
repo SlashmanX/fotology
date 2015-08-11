@@ -69,6 +69,8 @@ module.exports = (searchTerm, options) ->
 
 		request searchUrl, (error, response, body) ->
 			parsed = JSON.parse body
+			if not parsed.responseData?
+				return resolve([])
 			images = parsed.responseData.results
 			urls = images.map getUrl
 			return resolve(urls)
