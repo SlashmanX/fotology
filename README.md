@@ -92,7 +92,16 @@ To get images of a specific colour only, please pick from and **ONE OF THESE ONL
 * white
 * yellow
 
-### `limit`
-Return between 1 and 8 results
-
 Using a colour not in here will cause Google's servers to ignore you.
+
+### `limit`
+Return between 1 and 8 result
+
+### `rights`
+Limit search results to given license
+
+* cc_publicdomain
+* cc_attribute
+* cc_sharealike
+* cc_noncommercial
+* cc_nonderived

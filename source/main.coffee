@@ -24,6 +24,7 @@ module.exports = (searchTerm, options) ->
 		options.color = options.color or "any" # will remove invalid colours later
 		options.language = options.language or "en"
 		options.limit = options.limit or 5
+		options.rights = options.rights or ""
 
 		# process safety
 		switch options.safe
@@ -61,8 +62,10 @@ module.exports = (searchTerm, options) ->
 
 		limit = options.limit
 
+		rights = options.rights
+
 		searchPrefix = "https://ajax.googleapis.com/ajax/services/search/images?v=1.0"
-		searchUrl = "#{searchPrefix}&q=#{searchTerm}&imgsz=#{size}&safe=#{safety}&hl=#{language}&imgcolor=#{color}&rsz=#{limit}"
+		searchUrl = "#{searchPrefix}&q=#{searchTerm}&as_rights=#{rights}&imgsz=#{size}&safe=#{safety}&hl=#{language}&imgcolor=#{color}&rsz=#{limit}"
 
 		request searchUrl, (error, response, body) ->
 			parsed = JSON.parse body

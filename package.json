@@ -1,6 +1,6 @@
 {
   "name": "fotology-x",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "Simplifies Image Searching",
   "main": "compiled/main.js",
   "dependencies": {
