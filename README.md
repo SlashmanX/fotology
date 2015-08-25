@@ -4,13 +4,13 @@ Fotology is a simple way to get the urls of images via Google Image Search.
 
 The api is very simple:
 ```javascript
-fotology(searchTerm, [options], callback);
+fotology(searchTerm, [options]).then();
 ```
 
 To find pictures of cats:
 ```javascript
 var fotology = require("fotology");
-fotology("cats", function (imageURLs) {
+fotology("cats").then(function (imageURLs) {
     for (i in imageURLs)
         console.log imageURLs[i];
 });
@@ -18,7 +18,7 @@ fotology("cats", function (imageURLs) {
 
 Options
 -------
-To modify behaviour, pass in an `options` object between the search term and callback. For example:
+To modify behaviour, pass in an `options` object after the search term. For example:
 ```javascript
 let options = {
     size: "large", // large images only
@@ -26,7 +26,7 @@ let options = {
     safe: true, // force safe search on
     color: "white" // white cats only please
 }
-fotology("cats", options, callback);
+fotology("cats", options);
 ```
 
 Option   | Description  | Example value
